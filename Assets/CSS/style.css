@@ -50,6 +50,7 @@ header div ul li a {
     margin: 25px;
     background-size: cover;
     background-position: center;
+    display: block;
 }
 
 h3 {
