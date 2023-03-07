@@ -12,7 +12,7 @@ header{
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ff580f;
-    color: #ccccff;
+    color: pink;
 }
 
 header h1{
@@ -39,6 +39,33 @@ header div ul li {
     font-weight: bold;
 }
 
-h2{
-    color: black;
+a {
+    text-decoration: none;
+    color: pink;
 }
+
+h3 {
+    color: black;
+    text-align: center;
+}
+
+#aboutme {
+    padding: 50px;
+
+}
+
+#work {
+    padding: 50px;
+
+}
+
+#resume {
+    padding: 50px;
+
+}
+
+#contact {
+    padding: 50px;
+
+}
+
