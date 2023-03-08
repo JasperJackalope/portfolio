@@ -17,8 +17,11 @@ body {
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--creamsicle);
-    color: var(--dragonbelly);
+    background-color: #ecfefa;
+    color: purple;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 header h1 {
@@ -44,7 +47,7 @@ header div ul li {
 }
 
 a {
-    color: var(--dragonbelly);
+    color: purple;
     text-decoration: none;
 }
 
@@ -68,35 +71,8 @@ p {
     margin-left: 20px;
 }
 
-.benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-.benefit-lead, .benefit-brand, .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img, .benefit-brand img, .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
 .about {
-    margin-top: 25px;
+    margin-top: 100px;
     margin-bottom: 25px;
     padding: 50px;
     height: 300px;
@@ -127,4 +103,16 @@ footer {
 
 footer h2 {
     font-size: 20px;
+}
+
+.flex-container {
+    display: flex;
+    height: 200px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tile {
+    background-color: #ff580f;
+    width: 200px;
 }
