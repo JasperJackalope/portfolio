@@ -78,8 +78,8 @@ main div section header img {
   color: #2832c2;
 }
 
-.card.camera {
-  flex: 1 1 200px;
+.card img {
+  width: 300px;
 }
 
 footer {
@@ -108,3 +108,14 @@ h2 {
   text-align: center;
   padding: 25px;
 }
+
+h3 {
+  color:black;
+  margin-top: 75px;
+}
+
+.card a {
+    color: navy;
+    text-decoration: none;
+    margin: 20px;
+  }
