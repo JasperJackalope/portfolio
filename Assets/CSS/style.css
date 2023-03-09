@@ -208,8 +208,9 @@ a:hover {
     width: 250px;
     height: 250px;
   }
-  p{
-    margin-top: 0;
+  .biocard p{
+    margin-top: 50px;
     margin-left: 0;
+    display:inline;
   }
 }
