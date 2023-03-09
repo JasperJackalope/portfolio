@@ -168,14 +168,14 @@ a:hover {
     flex-wrap: wrap;
   }
   body header h1{
-    margin-left: 115px;
+    margin-left: 75px;
   }
   body header h3{
     margin-top: 0px;
-    margin-left: 100px;
+    margin-left: 50px;
   }
   header ul li{
-    margin-left: 175px;
+    margin-left: 125px;
     margin-top: 10px;
   }
   .div-flexbox{
@@ -208,9 +208,17 @@ a:hover {
     width: 250px;
     height: 250px;
   }
+  .biocard img{
+    width: 250px;
+    height: auto;
+  }
   .biocard p{
     margin-top: 50px;
     margin-left: 0;
     display:inline;
+  }
+  .card img{
+    width: 250px;
+    height: 250px;
   }
 }
