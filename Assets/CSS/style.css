@@ -44,6 +44,7 @@ header ul li {
   flex: 1 0 175px;
   padding: 10px;
   text-align: center;
+  font-weight: bolder;
   border-style:dotted;
   border-width: 1px;
   background-color: #ED7117;
@@ -65,6 +66,7 @@ header ul li {
   flex: 1  200px;
   padding: 10px;
   text-align: center;
+  font-weight: bolder;
   border-style:dotted;
   border-width: 1px;
   background-color: #ED7117;
@@ -74,23 +76,32 @@ header ul li {
 .topcard header {
   padding: 20px;
   background: #ED7117;
-  color: #2832c2;
+  color: purple;
 
+}
+
+.topcard img {
+  border: black;
+  border-style: ridge;
 }
 
 main div section header img {
   width: 200px;
   height: auto;
+  border-style: ridge;
 }
 
 .card header {
   padding: 20px;
   background: #ED7117;
-  color: #2832c2;
+  color: purple;
 }
 
 .card img {
   width: 300px;
+  border: black;
+  border-style: ridge;
+  
 }
 
 footer {
@@ -108,6 +119,9 @@ footer h2 {
 .selfie {
   width:200px;
   height:auto;
+  margin-left: 25px;
+  border: black;
+  border-style: ridge;
 }
 
 a {
@@ -126,7 +140,8 @@ h3 {
 }
 
 .card a {
-    color: navy;
+    color: purple;
+    font-weight: bolder;
     text-decoration: none;
     margin: 20px;
 }
@@ -134,14 +149,22 @@ h3 {
 p {
   display: flex;  
   width: 500px;
+  margin-left: 100px;
+  margin-top: 75px;
 }
 
-.image {
-    flex-basis: 40%
+a:hover {
+  color: gray;
 }
-s
-.text {
-    font-size: 20px;
-    padding-left: 50px;
-    flex-basis: 40%
+
+.card a:hover {
+  color:black;
+}
+
+.card:hover {
+  background-color: rgb(160, 105, 4);
+}
+
+.card header:hover{
+  background-color: rgb(160, 105, 4);
 }
