@@ -51,8 +51,7 @@ header ul li {
   margin: 50px;
 }
 
-.biocard {
-  display:flex;  
+.biocard { 
   flex: 1 1 175px;
   padding: 10px;
   text-align: center;
@@ -115,7 +114,6 @@ footer h2 {
   font-size: 20px;
 }
 
-
 .selfie {
   width:200px;
   height:auto;
@@ -146,8 +144,7 @@ h3 {
     margin: 20px;
 }
 
-p {
-  display: flex;  
+p {  
   width: 500px;
   margin-left: 100px;
   margin-top: 75px;
@@ -161,10 +158,58 @@ a:hover {
   color:black;
 }
 
-.card:hover {
+.card:hover, .card header:hover {
   background-color: rgb(160, 105, 4);
 }
 
-.card header:hover{
-  background-color: rgb(160, 105, 4);
+@media screen and (max-width: 1170px) {
+  body header {
+    display:block;
+    flex-wrap: wrap;
+  }
+  body header h1{
+    margin-left: 115px;
+  }
+  body header h3{
+    margin-top: 0px;
+    margin-left: 100px;
+  }
+  header ul li{
+    margin-left: 175px;
+    margin-top: 10px;
+  }
+  .div-flexbox{
+    display: block;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    align-content: center;
+  }
+  .topcard{
+    flex: 1 1 0px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    border-style:dotted;
+    border-width: 1px;
+    background-color: #ED7117;
+    margin: 50px;
+  }
+  .biocard{
+    flex: 1 1 175px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    border-style:dotted;
+    border-width: 1px;
+    background-color: #ED7117;
+    margin: 50px;
+  }
+  .topcard img{
+    width: 250px;
+    height: 250px;
+  }
+  p{
+    margin-top: 0;
+    margin-left: 0;
+  }
 }
