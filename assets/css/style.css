@@ -166,6 +166,7 @@ a:hover {
   body header {
     display:block;
     flex-wrap: wrap;
+    width: 100%;
   }
   body header h1{
     margin-left: 75px;
