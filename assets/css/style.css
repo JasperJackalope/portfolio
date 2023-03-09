@@ -162,7 +162,7 @@ a:hover {
   background-color: rgb(160, 105, 4);
 }
 
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 390px) {
   body header {
     display:block;
     flex-wrap: wrap;
