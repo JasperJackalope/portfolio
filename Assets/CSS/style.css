@@ -1,267 +1,99 @@
-:root {
-    --creamsicle: #ff580f;
-    --periwinkle: #ccccff;
-    --dragonbelly: pink;
+* {
+  box-sizing: border-box;
 }
 
-html {
-    font-size: 62.5%;
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  background-color: #ccccff;
 }
 
-body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--periwinkle);
-    font-size: 1.75rem;
-    line-height: 1.5;
-    color: black;
+
+.div-flexbox {
+  /* Turns this element into a flexbox */
+  display: inline-flex;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  margin-top: 2%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0.625rem;
-  color: black;
-  font-weight: 700;
-  line-height: 1.1;
+.main-header {
+  display: flex;
+  /* Defines how to distribute the empty space between child elements */
+  justify-content: space-between;
+  background-color: #ecfefa;
+  color: purple;
+  width: 100%;
 }
 
-h1 {
-    font-size: 4rem;
-  }
-  
-h2 {
-    font-size: 3.5rem;
-    display: inline-block
-  }
-  
-h3 {
-    font-size: 3rem;
-  }
-  
-h4 {
-    font-size: 2.5rem;
-  }
-  
-h5 {
-    font-size: 2rem;
-  }
-  
-h6 {
-    font-size: 1.5rem;
-  }
-
-header{
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: var(--creamsicle);
+header h1 {
+  display: inline-block;
+  font-size: 35px;
+  margin-left: 50px;
 }
 
-header h1{
-    display: inline-block;
-    font-size: 50px;
-    color: var(--dragonbelly)
+header ul {
+  list-style-type: none;
 }
 
-header div {
-    display: inline-block;
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-size: 20px;
+header ul li {
+  display: inline-block;
+  margin-right: 50px;
+  margin-top: 15px;
 }
 
-header div ul {
-    list-style-type: none;
+.card {
+  /* A flex-basis of 200px sets the starting width */
+  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  flex: 1 0 200px;
+  padding: 10px;
+  text-align: center;
+  border-style:dotted;
+  border-width: 1px;
+  background-color: #ED7117;
+  margin: 25px 100px 25px 100px;
 }
 
-header div ul li {
-    display: inline-block;
-    margin-left: 25px;
-    font-weight: bold;
+main div section header img {
+  width: 200px;
+  height: auto;
 }
 
-header div ul li a {
-    text-decoration: none;
-    color: var(--dragonbelly);
+.card header {
+  padding: 20px;
+  background: #ED7117;
+  color: #2832c2;
 }
+
+.card.camera {
+  /* With a flex-grow value of 2, this element grows twice as wide as others */
+  /* The second value, flex-shrink, defines how the element will shrink if it can't fit */
+  flex: 1 1 200px;
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
 
 .selfie {
-    height: 25%;
-    width: 25%;
-    margin: 25px;
-    display: inline-block;
+  width:200px;
+  height:auto;
 }
 
-h3 {
-    color: black;
-    text-align: center;
+a {
+  color: purple;
+  text-decoration: none;
 }
 
-#aboutme {
-    padding: 50px;
+h2 {
+  text-align: center;
+  padding: 25px;
 }
-
-#aboutme h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: inline-block;
-}
-
-#aboutme p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.container1 {
-    
-}
-
-/* #work {
-    padding: 50px;
-
-}
-
-#work h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#work p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#resume {
-    padding: 50px;
-
-}
-
-#resume h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#resume p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#contact {
-    padding: 50px;
-}
-
-#contact h2 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-main div ul {
-    list-style-type: none;
-}
-
-main div ul li {
-    display:contents;
-    margin-left: 25px;
-    font-weight: bold;
-}
-
-main div ul li a {
-    text-decoration: none;
-    color: #ff580f;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: none;
-} */
-
-/* create our main grid with flexbox, use negative margins to offset the padding on the .card-column class */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-  
-  .justify-center {
-    justify-content: center;
-    display: inline-block;
-  }
-  
-  /* using a mobile-first approach, set base column width to be 100% and we'll update it using media queries for larger screen sizes */
-  .card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    /* when the screen resizes, make it so our columns don't jump in size */
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
-  
-  /* make each code card a flexbox column to align and justify content within it */
-  .code-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    min-height: 100%;
-    padding: 2rem;
-    color: var(--heliotrope);
-  
-    /* outline is like border, but on the outside of the box instead of inside */
-    outline: 2px dashed var(--gin);
-    outline-offset: -2px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  .code-card .card-header {
-    /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-    position: relative;
-    margin: -4rem 0 1.5rem 0;
-    padding: 0.5rem 1rem;
-    background-color: var(--outer-space);
-    color: var(--heliotrope);
-    border: 2px solid var(--gin);
-    border-radius: 8px;
-    transition: all 0.5s ease-in-out;
-  }
-  
-  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-  .code-card:hover,
-  .code-card:hover .card-header {
-    box-shadow: inset 0px 0px 8px var(--heliotrope), 0 0 15px var(--heliotrope);
-  }
-  
-  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-  .code-card .code-block {
-    flex-grow: 1;
-  }
-  
-  .code-card pre {
-    /* set styles to make it so code wraps in <pre> instead of overflowing */
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.2rem 1rem;
-    color: var(--gin);
-    border-radius: 8px;
-    /* use linear-gradient() function to create a fading background  */
-    background-image: linear-gradient(
-      rgba(232, 102, 236, 0.3) 0%,
-      rgba(232, 102, 236, 0.6) 100%
-    );
-    display: flex;
-    align-items: center;
-  }
-  
-  /* on <pre> click, select all contents so the code is highlighted */
-  .code-card pre:active {
-    user-select: all;
-  }
-  
-  /* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-  @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:last-child {
-      flex-grow: 1;
-    }
-}
-

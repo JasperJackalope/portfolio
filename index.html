@@ -1,55 +1,65 @@
 <!DOCTYPE html>
-<html lang="en-us">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="./Assets/CSS/reset.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+<html lang="en">
+
+  <head>
     <title>Daniel Boddicker Portfolio</title>
-</head>
-<body>
-    <header>
-        <h1>Daniel Boddicker</h1>
-        <div>
-            <ul>
-                <li>
-                    <a href="#aboutme">About</a>
-                </li>
-                <li>
-                    <a href="#work">Work</a>
-                </li>
-                <li>
-                    <a href="#resume">Resume</a>
-                </li>
-                <li>
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <h3>Adult Human, Former Child</h3>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/css/poopstyle.css" />
+  </head>
+
+  <body>
+    <header class="main-header">
+      <h1>Daniel Boddicker</h1>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </header>
+
     <main>
-        <div id="aboutme">
-            <h2>ABOUT</h2>
-            <img src="./Assets/Images/moustache.JPG" alt="Man with Glasses and Mustache" class="selfie">
-            <div>
-                <p>It is a truth universally acknowledged that a single man in possession of a good fortune must be in want of a wife. </p>
-            </div>
-        </div>
-
-
-
-        
-        <div id="work">
-            <h2>Work</h2>
-        </div>
-        <div id="resume">
-            <h2>Resume</h2>
-        </div>
-        <div id="contact">
-            <h2>Contact</h2>
-        </div>
+      <div id="about">
+        <h2>About Me</h2>
+        <section class="card">
+            <img src="./assets/images/moustache.JPG" class="selfie">
+            <p>I was born and raised in a summer haze, bound by the surprise of our glory days.</p>
+        </section>
+      </div>
+      <h2 id="work">Work</h2>
+      <div class="div-flexbox">
+        <section class="card">
+          <header>Project 1</header>
+        </section>
+        <section class="card">
+          <header>Project 2</header>
+        </section>
+        <section class="card">
+          <header>Project 3</header>
+        </section>
+        <section class="card">
+          <header>Project 4</header>
+       </section>
+      </div>
+      <h2 id="contact">Contact</h2>
+      <div class="div-about">
+        <section class="card">
+            <p>I was born and raised in a summer haze, bound by the surprise of our glory days.</p>
+        </section>
+      </div>
     </main>
     <footer>
-    </footer>
-</body>
+      <h2>Made with 6 Tootsie Pops</h2>
+      <p>
+          &copy; 2023 Daniel Boddicker
+      </p>
+  </footer>
+  </body>
+
 </html>
