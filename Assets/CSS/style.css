@@ -15,6 +15,7 @@ body {
   /* Forces elements to the next line if they don't fit */
   flex-wrap: wrap;
   margin-top: 2%;
+  align-content: center;
 }
 
 .main-header {
@@ -45,13 +46,32 @@ header ul li {
 .card {
   /* A flex-basis of 200px sets the starting width */
   /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
-  flex: 1 0 200px;
+  flex: 1 0 175px;
   padding: 10px;
   text-align: center;
   border-style:dotted;
   border-width: 1px;
   background-color: #ED7117;
   margin: 25px 100px 25px 100px;
+}
+
+.topcard {
+  /* A flex-basis of 200px sets the starting width */
+  /* A flex-grow value of 1 allows the elements to evenly grow to fill the remaining space */
+  flex: 1 0 600px;
+  padding: 10px;
+  text-align: center;
+  border-style:dotted;
+  border-width: 1px;
+  background-color: #ED7117;
+  margin: 25px 100px 25px 100px;
+}
+
+.topcard header {
+  padding: 20px;
+  background: #ED7117;
+  color: #2832c2;
+
 }
 
 main div section header img {
